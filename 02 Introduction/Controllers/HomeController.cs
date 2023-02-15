@@ -1,4 +1,5 @@
 ﻿using _02_Introduction.Models;
+using _02_Introduction.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,10 +13,12 @@ namespace _02_Introduction.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IStudentService studentService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IStudentService studentService)
         {
             _logger = logger;
+            this.studentService = studentService;
         }
 
         public IActionResult Index()
@@ -30,11 +33,16 @@ namespace _02_Introduction.Controllers
 
             IndexViewModel viewModel = new IndexViewModel();
             viewModel.Group1 = students;
-            viewModel.Group2.Add(new StudentViewModel { FirstName = "First Name 11", LastName = "Last Name 11", StudentNumber = "11" });
+            viewModel.Group2.Add(new StudentViewModel
+            {
+                FirstName = "First Name 11",
+                LastName = "Last Name 11",
+                StudentNumber = studentService.GetStudentNumber().ToString()
+            }) ;
 
             viewModel.PageTitle = "Students";
 
-            return View(viewModel); 
+            return View(viewModel);
         }
 
         public IActionResult Privacy()
