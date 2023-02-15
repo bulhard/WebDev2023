@@ -1,0 +1,20 @@
+﻿@model IndexViewModel 
+
+@{
+    ViewData["Title"] = Model.PageTitle;
+}
+
+
+<h1>Students from Group 1</h1>
+@foreach(var student in Model.Group1)
+{
+    <div>@student.FirstName @student.LastName</div>
+}
+
+<hr />
+
+<h1>Students from Group 2</h1>
+@foreach(var student in Model.Group2)
+{
+    <div>@student.FirstName @student.LastName</div>
+}
