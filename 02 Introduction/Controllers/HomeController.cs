@@ -38,7 +38,7 @@ namespace _02_Introduction.Controllers
                 FirstName = "First Name 11",
                 LastName = "Last Name 11",
                 StudentNumber = studentService.GetStudentNumber().ToString()
-            }) ;
+            });
 
             viewModel.PageTitle = "Students";
 
