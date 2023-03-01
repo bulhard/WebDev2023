@@ -1,0 +1,81 @@
+﻿@model _05_FormValidation.Models.Person
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .error {
+        color: red;
+    } 
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form id="theForm" enctype="multipart/form-data" method="post">
+        <br />
+        <div>
+            First name: <input type="text" asp-for="FirstName" />
+            <br /><br />
+        </div>
+        <div>
+            Last name: <input type="text" asp-for="LastName" />
+            <br /><br />
+        </div>
+        <div>
+            E-mail: <input type="text" asp-for="EMail" />
+            <br /><br />
+        </div>
+        <div>
+            Gender: <select asp-for="Gender" >
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <br /><br />
+        </div>
+         <div>
+            Country: <select asp-for="Country" >
+                <option>Bulgaria</option>
+                <option>Romania</option>
+            </select>
+            <br /><br />
+        </div>
+        <div>
+            Subscribe Me: <input asp-for="SubscribeMe" />
+            <br /><br />
+        </div>
+        <div>
+            Photo: <input type="file" asp-for="Photo" />
+            <br /><br />
+        </div>
+        <hr />
+        <br />
+        <input type="submit" value="Submit form" />
+    </form>
+</div>
+
+<script>
+    function SubmitForm() {
+        debugger;
+
+        $("#theForm").validate();
+
+        // $("#theForm").ajaxSubmit({ url: "/Home/Index", type: 'get' });
+
+        // debugger;
+
+        let url = "/Home/Index";
+        let params = $("#theForm").serialize();
+
+        //$.get(url + "?" + params);
+
+        $.post(url, params)
+            .done(function(data) {
+                alert("success");
+                alert(data);
+            })
+            .fail(function() {
+                alert("error");
+            })
+            .always(function() {
+                alert("finished");
+            });
+    }
+</script>
