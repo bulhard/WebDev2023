@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Configuration", "04 Conf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 FormValidation", "05 FormValidation\05 FormValidation.csproj", "{C7F63D39-D56C-4BC6-B677-45B20BA6E1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 WorkingWithDB", "06 WorkingWithDB\06 WorkingWithDB.csproj", "{8A5F4892-C4C4-4CB8-B989-607D69270C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06 WorkingWithDB", "06 WorkingWithDB\06 WorkingWithDB.csproj", "{8A5F4892-C4C4-4CB8-B989-607D69270C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Authentication", "07_Authentication\07_Authentication.csproj", "{C856D9EE-9707-4681-A262-BF40E359CD14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8A5F4892-C4C4-4CB8-B989-607D69270C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A5F4892-C4C4-4CB8-B989-607D69270C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A5F4892-C4C4-4CB8-B989-607D69270C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C856D9EE-9707-4681-A262-BF40E359CD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C856D9EE-9707-4681-A262-BF40E359CD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C856D9EE-9707-4681-A262-BF40E359CD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C856D9EE-9707-4681-A262-BF40E359CD14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
