@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 FormValidation", "05 For
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06 WorkingWithDB", "06 WorkingWithDB\06 WorkingWithDB.csproj", "{8A5F4892-C4C4-4CB8-B989-607D69270C79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Authentication", "07_Authentication\07_Authentication.csproj", "{C856D9EE-9707-4681-A262-BF40E359CD14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Authentication", "07_Authentication\07_Authentication.csproj", "{C856D9EE-9707-4681-A262-BF40E359CD14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_TempData", "08_TempData\08_TempData.csproj", "{8E13F44A-9EEC-48D1-AE42-F56A30191C22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C856D9EE-9707-4681-A262-BF40E359CD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C856D9EE-9707-4681-A262-BF40E359CD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C856D9EE-9707-4681-A262-BF40E359CD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E13F44A-9EEC-48D1-AE42-F56A30191C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E13F44A-9EEC-48D1-AE42-F56A30191C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E13F44A-9EEC-48D1-AE42-F56A30191C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E13F44A-9EEC-48D1-AE42-F56A30191C22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
