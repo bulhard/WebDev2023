@@ -1,0 +1,22 @@
+﻿@model _10_SendEmail.Models.Email.MailRequest
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data">
+        To:
+        <input type="text" name="ToEmail" />
+        <br /><br />
+        Subject:
+        <input type="text" name="Subject" />
+        <br /><br />
+        Body:
+        <input type="text" name="Body" />
+        <br /><br />
+        Attachments:
+        <input type="file" name="Attachments" multiple />
+        <br /><br />
+        <input type="submit" value="Send" />
+    </form>
+</div>
