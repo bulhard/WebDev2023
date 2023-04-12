@@ -1,0 +1,14 @@
+﻿@model List<MyNews.BLL.Models.ActicleService.ArticleModel>
+<div class="row tn-slider">
+    @foreach (var article in Model)
+    {
+        <div class="col-md-6">
+            <div class="tn-img">
+                <img src="/uploads/@article.Image" />
+                <div class="tn-title">
+                    <a href="">@article.CategoryName @article.Image</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
